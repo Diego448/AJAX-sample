@@ -1,0 +1,11 @@
+form {
+	text-align: right;
+}
+div:nth-child(1) {
+	float: left;
+	width: 50%;
+}
+div:nth-child(2) {
+	float: right;
+	width: 50%;
+}
