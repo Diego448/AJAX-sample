@@ -2,26 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>AJAX Sample page</title>
+		<title id="a">AJAX Sample page</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form>
+		<form method="POST" action="phpTest2.php">
 			<div>
-				<p><input type="button" value="start" onclick="algo();"></p>
-				<p><select>
+				<p><input type="button" value="Start" onclick="req()"></p>
+				<p><select id="selection" onchange="showInfo()">
 					<option>Pick one</option>
-					<option>A</option>
-					<option>B</option>
 				</select></p>
-				<p>Name:<input type="text"></p>
-				<p>Last name:<input type="text"></p>
-				<p>Gender:<input type="text"></p>
+				<p id="name">Name:</p>
+				<p id="lastName">Last name:</p>
+				<p id="gender">Gender:</p>
 			</div>
 			<div>
-				<p><input type="number" placeholder="Type an age"><input type="button" value="search"></p>
-				<p>Born date:<input type="number"></p>
-			<p>Age:<input type="number"></p>
+				<p><input type="number" placeholder="Type an age" id="age"><input type="button" value="Search" onclick="selectByAge()"></p>
+				<p id="bornDate">Born date:</p>
+				<p id="age2">Age:</p
 				</div>
 		</form>
 		<script src="httpReqTest.js"></script>
